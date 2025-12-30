@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { Navbar } from "@/app/components/navbar";
 import { Footer } from "@/app/components/footer";
 import { getArticleBySlug, getArticleSlugs } from "@/lib/articles";
@@ -73,7 +74,14 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <p className="mt-4 text-xl text-muted">{article.excerpt}</p>
           </header>
           <div className="prose prose-lg max-w-none">
-            <MDXRemote source={article.content} />
+            <MDXRemote
+              source={article.content}
+              options={{
+                mdxOptions: {
+                  remarkPlugins: [remarkGfm],
+                },
+              }}
+            />
           </div>
         </article>
       </main>

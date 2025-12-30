@@ -118,19 +118,19 @@ body {
 }
 
 .prose h1 {
-  @apply text-3xl font-semibold tracking-tight;
+  @apply text-3xl font-semibold tracking-tight mb-6;
 }
 
 .prose h2 {
-  @apply text-2xl font-semibold tracking-tight mt-16 mb-4;
+  @apply text-2xl font-semibold tracking-tight mt-12 mb-6;
 }
 
 .prose h3 {
-  @apply text-xl font-semibold tracking-tight;
+  @apply text-xl font-semibold tracking-tight mt-8 mb-4;
 }
 
 .prose p {
-  @apply leading-relaxed;
+  @apply leading-relaxed mb-6;
 }
 
 .prose a {
@@ -146,37 +146,61 @@ body {
 }
 
 .prose pre {
-  @apply bg-gray-100 border border-border;
+  @apply bg-gray-100 border border-border my-6 p-4 overflow-x-auto rounded;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
 }
 
 .prose blockquote {
-  @apply border-accent text-muted;
+  @apply border-l-2 border-accent text-muted pl-6 my-6 italic;
 }
 
 .prose table {
-  @apply text-sm;
+  @apply text-sm my-8 w-full border-collapse;
+}
+
+.prose thead {
+  @apply border-b border-border;
 }
 
 .prose th {
-  @apply text-left font-medium text-foreground;
+  @apply text-left font-medium text-foreground py-3 px-4 bg-gray-100;
+}
+
+.prose tbody tr {
+  @apply border-b border-border;
+}
+
+.prose tbody tr:last-child {
+  @apply border-b-0;
 }
 
 .prose td {
-  @apply text-muted;
+  @apply text-muted py-3 px-4;
 }
 
 .prose hr {
-  @apply border-border;
+  @apply border-border my-12;
 }
 
 .prose ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-6 mb-6;
 }
 
 .prose ol {
-  @apply list-decimal pl-6;
+  @apply list-decimal pl-6 mb-6;
 }
 
 .prose li {
-  @apply my-2;
+  @apply my-2 leading-relaxed;
+}
+
+.prose > *:first-child {
+  @apply mt-0;
+}
+
+.prose > *:last-child {
+  @apply mb-0;
 }
