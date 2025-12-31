@@ -3,6 +3,7 @@ import Link from "next/link";
 const FOOTER_LINKS = [
   { href: "/articles", label: "Articles" },
   { href: "/playbooks", label: "Playbooks" },
+  { href: "/about", label: "About" },
 ];
 
 export function Footer() {
