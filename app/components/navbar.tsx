@@ -2,12 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { routes } from "@/lib/routes";
 
-const NAV_LINKS = [
-  { href: "/articles", label: "Articles" },
-  { href: "/playbooks", label: "Playbooks" },
-  { href: "/about", label: "About" },
-];
+const NAV_LINKS = [routes.articles, routes.about];
 
 export function Navbar() {
   const pathname = usePathname();
@@ -16,7 +13,7 @@ export function Navbar() {
     <header className="border-b border-border px-6 py-6">
       <div className="mx-auto flex max-w-5xl items-center justify-between">
         <Link
-          href="/"
+          href={routes.home.href}
           className="font-mono text-sm tracking-widest hover:text-accent"
         >
           AMARIN

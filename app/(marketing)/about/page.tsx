@@ -4,7 +4,7 @@ import { Footer } from "@/app/components/footer";
 export const metadata = {
   title: "About — AMARIN",
   description:
-    "Product Architect & Systems Designer. Building scalable digital products from idea to impact.",
+    "AMARIN is a living laboratory exploring product architecture, systems thinking and scalable MVP design.",
 };
 
 export default function AboutPage() {
@@ -18,40 +18,44 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Product Architect &<br />
-            Systems Designer
+            From Frontend to Systems
           </h1>
           <p className="mt-6 text-xl text-muted">
-            Building scalable digital products from idea to impact.
+            AMARIN is a living laboratory where product architecture, systems
+            thinking and experimental building converge.
           </p>
 
-          {/* Position */}
+          {/* Origin */}
           <section className="mt-16">
             <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
-              Position
+              Origin
             </p>
             <div className="space-y-4 text-lg text-muted">
-              <p>Not a developer. Not a product manager. Not a consultant.</p>
+              <p>I started as a frontend engineer building interfaces.</p>
+              <p>
+                Then I built startups. Then products. Then the systems behind
+                those products.
+              </p>
               <p className="text-foreground font-medium">
-                A Product Architect — the person who designs the system behind
-                the product.
+                Somewhere in between, I realized the real work is not features —
+                it is architecture.
               </p>
             </div>
           </section>
 
-          {/* What I Do */}
+          {/* What This Lab Explores */}
           <section className="mt-16">
             <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
-              What I Bring
+              What This Lab Explores
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 "Product architecture",
-                "Systems design",
-                "Technical strategy",
-                "Decision frameworks",
-                "Growth playbooks",
-                "Product–Business alignment",
+                "Systems thinking",
+                "Scalable MVP design",
+                "Technical decision models",
+                "Business–product alignment",
+                "Growth as a system, not a tactic",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-lg">
                   <span className="text-accent">→</span>
@@ -61,31 +65,89 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Problem I Solve */}
+          {/* Why AMARIN Exists */}
           <section className="mt-16">
             <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
-              Problems I Solve
+              Why AMARIN Exists
             </p>
             <div className="space-y-3 text-muted">
-              <p>Startups with good products but bad systems</p>
-              <p>Scaleups growing without architecture</p>
-              <p>Teams building fast but without coherence</p>
-              <p>Founders without systemic vision</p>
+              <p>
+                Because most MVPs die not from lack of code — but lack of
+                architecture.
+              </p>
+              <p>
+                Because speed without systems creates technical debt, not
+                products.
+              </p>
+              <p>Because growth collapses when structure was never designed.</p>
+              <p>
+                AMARIN exists to document how to build things that can actually
+                survive success.
+              </p>
             </div>
           </section>
 
-          {/* Pillars */}
+          {/* Beyond Software */}
           <section className="mt-16">
             <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
-              Intellectual Pillars
+              Beyond Software
+            </p>
+            <div className="space-y-4 text-muted text-lg">
+              <p>
+                Also, my electronics engeneering background remains present in
+                my leisure time by implementing and building physical electronic
+                systems, from DIY instrumentation to high-voltage probes,
+                ignition circuits and hardware prototypes.
+              </p>
+              <p>
+                And after many years at the trenches is funny to realized how
+                working with physical constraints, electricity, tolerances and
+                real-world failure modes makes one thing very clear:
+              </p>
+              <p className="text-foreground font-medium">
+                The same architectural laws govern both software and hardware
+                systems.
+              </p>
+              <p>
+                Feedback loops, load, scaling, redundancy, bottlenecks, entropy,
+                decay — systems behave the same, regardless of their medium.
+              </p>
+              <p>
+                AMARIN is not about code.
+                <br />
+                It is about understanding systems and designing them to survive
+                reality.
+              </p>
+            </div>
+          </section>
+
+          {/* Core Ideas */}
+          <section className="mt-16">
+            <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
+              Core Ideas
             </p>
             <div className="space-y-4">
               {[
-                { title: "Systems Thinking", desc: "Everything is a system" },
-                { title: "First Principles", desc: "Nothing is copied" },
-                { title: "Product Architecture", desc: "Before features" },
-                { title: "Strategic Engineering", desc: "Code with intention" },
-                { title: "Measurable Growth", desc: "No metrics, no product" },
+                {
+                  title: "Systems Thinking",
+                  desc: "Products are organisms, not features",
+                },
+                {
+                  title: "First Principles",
+                  desc: "Architecture before imitation",
+                },
+                {
+                  title: "Scalable MVP",
+                  desc: "Fast but structurally sound",
+                },
+                {
+                  title: "Intentional Engineering",
+                  desc: "Every line has a reason",
+                },
+                {
+                  title: "Growth Systems",
+                  desc: "Metrics are architecture",
+                },
               ].map((pillar) => (
                 <div key={pillar.title} className="flex items-baseline gap-4">
                   <span className="text-foreground font-medium">
@@ -97,12 +159,13 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Promise */}
+          {/* Closing */}
           <section className="mt-16 pt-16 border-t border-border">
             <p className="text-2xl font-light leading-relaxed md:text-3xl text-center">
-              I help founders and teams design products that{" "}
+              AMARIN is a place to study how products are actually designed —
               <span className="accent-gradient font-medium">
-                don&apos;t collapse when they succeed.
+                {" "}
+                before they become fragile companies.
               </span>
             </p>
           </section>
