@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/app/components/navbar";
 import { Footer } from "@/app/components/footer";
 
@@ -30,8 +31,15 @@ export default function HomePage() {
             A public lab for product architecture and digital systems
           </p>
 
-          <h1 className="animate-fade-up animation-delay-100 text-5xl font-semibold leading-tight tracking-tight md:text-7xl">
-            <span className="accent-gradient">AMARIN</span>
+          <h1 className="animate-fade-up animation-delay-100">
+            <Image
+              src="/logos/amarin-logo.svg"
+              alt="AMARIN"
+              width={200}
+              height={60}
+              className="h-10 w-auto mx-auto md:h-12"
+              priority
+            />
           </h1>
 
           <p className="animate-fade-up animation-delay-200 mt-6 text-xl text-gray-500 md:text-2xl">

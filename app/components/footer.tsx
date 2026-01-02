@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { routes } from "@/lib/routes";
 
@@ -9,9 +10,15 @@ export function Footer() {
       <div className="mx-auto flex max-w-5xl items-center justify-between text-sm text-muted">
         <Link
           href={routes.home.href}
-          className="font-mono hover:text-accent transition-colors"
+          className="hover:opacity-80 transition-opacity"
         >
-          AMARIN
+          <Image
+            src="/logos/amarin-logo.svg"
+            alt="AMARIN"
+            width={80}
+            height={24}
+            className="h-5 w-auto"
+          />
         </Link>
         <nav className="flex gap-6">
           {FOOTER_LINKS.map((link) => (

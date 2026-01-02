@@ -2,12 +2,12 @@
 
 :root {
   /* Core palette - dark, architectural */
-  --background: #0c0c0e;
+  --background: #0b0d10;
   --foreground: #e8e8e8;
 
   /* Accent - strategic blue-green */
-  --accent: #00d4aa;
-  --accent-dim: #00a88a;
+  --accent: #00e0b4;
+  --accent-dim: #00b08f;
 
   /* System grays */
   --gray-100: #1a1a1f;

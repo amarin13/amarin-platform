@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { routes } from "@/lib/routes";
@@ -14,9 +15,15 @@ export function Navbar() {
       <div className="mx-auto flex max-w-5xl items-center justify-between">
         <Link
           href={routes.home.href}
-          className="font-mono text-sm tracking-widest hover:text-accent"
+          className="hover:opacity-80 transition-opacity"
         >
-          AMARIN
+          <Image
+            src="/logos/amarin-logo.svg"
+            alt="AMARIN"
+            width={80}
+            height={24}
+            className="h-4 w-auto"
+          />
         </Link>
         <nav className="flex gap-6 text-sm text-muted">
           {NAV_LINKS.map((link) => (
