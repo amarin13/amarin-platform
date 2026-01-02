@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+
+const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-sans",
@@ -46,6 +49,13 @@ export default function RootLayout({
       >
         {children}
       </body>
+      {PLAUSIBLE_DOMAIN && (
+        <Script
+          defer
+          data-domain={PLAUSIBLE_DOMAIN}
+          src="https://plausible.io/js/script.js"
+        />
+      )}
     </html>
   );
 }

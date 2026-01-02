@@ -91,4 +91,3 @@ export function SocialLinks({ links }: SocialLinksProps) {
     </div>
   );
 }
-
