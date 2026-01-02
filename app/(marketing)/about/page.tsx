@@ -1,5 +1,6 @@
 import { Navbar } from "@/app/components/navbar";
 import { Footer } from "@/app/components/footer";
+import { SocialLinks } from "@/app/components/social-links";
 
 export const metadata = {
   title: "About — AMARIN",
@@ -157,6 +158,14 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </section>
+
+          {/* Connect */}
+          <section className="mt-16">
+            <p className="mb-6 font-mono text-xs uppercase tracking-widest text-accent">
+              Connect
+            </p>
+            <SocialLinks links={["linkedin"]} />
           </section>
 
           {/* Closing */}
