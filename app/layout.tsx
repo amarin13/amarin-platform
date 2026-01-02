@@ -48,14 +48,14 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
+        {PLAUSIBLE_DOMAIN && (
+          <Script
+            defer
+            data-domain={PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+          />
+        )}
       </body>
-      {PLAUSIBLE_DOMAIN && (
-        <Script
-          defer
-          data-domain={PLAUSIBLE_DOMAIN}
-          src="https://plausible.io/js/script.js"
-        />
-      )}
     </html>
   );
 }
