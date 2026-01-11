@@ -23,7 +23,7 @@ export default function ArticlesPage() {
             written from first principles.
           </p>
 
-          <div className="mt-16 space-y-1">
+          <div className="mt-16 space-y-4">
             {articles.map((article) => (
               <Link
                 key={article.slug}
